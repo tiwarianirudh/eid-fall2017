@@ -4,7 +4,7 @@
 ### University of Colorado Boulder  
 
 **Project Description and Implementation**  
->Interface DHT22 Sensor with Raspberry Pi 3  
+>Interface DHT22 Sensor with Raspberry Pi 3  .
 >The GUI is created to show values values for temperature, humidity, date and time, average values, alarm indications, progress-bar indications and graphs.
 >The temperature and humidity values are refreshed for every "Refresh" button click.
 >The average values until the last event of data capture are shown for humidity and temperature sensor values.
@@ -15,14 +15,14 @@
 >The alarm activations is shown by RED color, while GREEN indicates the safe-value.
 >The alarm color is set to BLACK if no data is sensed by the sensor indicating the error.
 >The progress bar indicates the %value for obtained humidity and temperature data on a scale of 100.
->The close button terminates the Sensor Data Application
+>The close button terminates the Sensor Data Application.
 
 
 **Instructions Followed**  
 >Raspberry Pi is flashed with Raspbian Stretch OS.  
 >To support remote development and demonstration, VNC viewer is setup.
 >PyQt5 library is installed on the Raspberry Pi.
->Pin Connections: PIN1:VCC | PIN6:GROUND | PIN7:DATA  
+>Pin Connections: PIN1:VCC | PIN6:GROUND | PIN7:DATA.
 >The following command is used to generate the python code from the .ui file from GUI created in QtCreator: pyuic5 -x mainwindow.ui -o project1.py
 >The following command is used to run the python-code: python3 project1.py
 
