@@ -3,44 +3,36 @@
 ### Author: *Anirudh Tiwari*
 ### University of Colorado Boulder  
 
+
+
 **Project Description and Implementation**  
->Interface DHT22 Sensor with Raspberry Pi3
+>1. Interface DHT22 Sensor with Raspberry Pi3
+>2. The GUI is created to show values values for temperature, humidity, date and time, average values, alarm indications, progress-bar indications and graphs.
+>3. The temperature and humidity values are refreshed for every "Refresh" button click.
+>4. The average values until the last event of data capture are shown for humidity and temperature sensor values.
+>5. A .csv file is created for storing the obtained values from the sensor.
+>6. Graph for Temperature and Humidity values can be plotted until the last event of data capture by pressing the Generate Graph button.
+>7. User can set optimum values for temperature and humidity to activate the visual-alarm.
+>8. Visual alarm in the form of color change is implemented for the alarm-activation values entered by the user or the default values set.
+>9. The alarm activations is shown by RED color, while GREEN indicates the safe-value.
+>10. The alarm color is set to BLACK if no data is sensed by the sensor indicating the error.
+>11. The progress bar indicates the %value for obtained humidity and temperature data on a scale of 100.
+>12. The close button terminates the Sensor Data Application.
 
->The GUI is created to show values values for temperature, humidity, date and time, average values, alarm indications, progress-bar indications and graphs.
 
->The temperature and humidity values are refreshed for every "Refresh" button click.
 
->The average values until the last event of data capture are shown for humidity and temperature sensor values.
-
->A .csv file is created for storing the obtained values from the sensor.
-
->Graph for Temperature and Humidity values can be plotted until the last event of data capture by pressing the Generate Graph button.
-
->User can set optimum values for temperature and humidity to activate the visual-alarm.
-
->Visual alarm in the form of color change is implemented for the alarm-activation values entered by the user or the default values set.
-
->The alarm activations is shown by RED color, while GREEN indicates the safe-value.
-
->The alarm color is set to BLACK if no data is sensed by the sensor indicating the error.
-
->The progress bar indicates the %value for obtained humidity and temperature data on a scale of 100.
-
->The close button terminates the Sensor Data Application.
 
 
 **Instructions Followed**  
->Raspberry Pi is flashed with Raspbian Stretch OS.  
+>1. Raspberry Pi is flashed with Raspbian Stretch OS.  
+>2. To support remote development and demonstration, VNC viewer is setup.
+>3. PyQt5 library is installed on the Raspberry Pi.
+>4. Pin Connections: PIN1:VCC | PIN6:GROUND | PIN7:DATA.
+>5. The following command is used to generate the python code from the .ui file from GUI created in QtCreator: pyuic5 -x mainwindow.ui -o project1.py
+>6. The following command is used to run the python-code: python3 project1.py
 
->To support remote development and demonstration, VNC viewer is setup.
 
->PyQt5 library is installed on the Raspberry Pi.
 
->Pin Connections: PIN1:VCC | PIN6:GROUND | PIN7:DATA.
-
->The following command is used to generate the python code from the .ui file from GUI created in QtCreator: pyuic5 -x mainwindow.ui -o project1.py
-
->The following command is used to run the python-code: python3 project1.py
 
 
 **Project Features for Extra-Credits**  
@@ -52,6 +44,11 @@
 >6. Alarm Activation(Red) if the temperature value exceeds the user set value,else is Green.
 >7. Alarm Activation(Red) if the humidity value exceeds the user set value, else is Green.
 >8. Alarm is Black and a message is displayed if no data is acquired by the sensor or the sensor malfunctions.
+
+
+
+
+
 
 **Supporting Execution-Pictures**  
 
@@ -71,6 +68,10 @@
 
 
 ![alt text](https://github.com/tiwarianirudh/eid-fall2017/blob/master/Project1/untitled/Temperature.png "With Temperature Graph")
+
+
+
+
 
 
 **References:**  
