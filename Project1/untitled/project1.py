@@ -221,7 +221,7 @@ class Ui_MainWindow(object):
         plt.show()
 
     # Graph Plotting for the obtained Humidity values
-    #Refernce: https://pythonprogramming.net/loading-file-data-matplotlib-tutorial/
+    # Refernce: https://pythonprogramming.net/loading-file-data-matplotlib-tutorial/
     def graph_hum(self):
         temperature_data, humidity_data = numpy.loadtxt('sensor_data.csv', delimiter=',', unpack=True)
         j = range(0, len(humidity_data))
@@ -230,6 +230,8 @@ class Ui_MainWindow(object):
         plt.ylabel('Humidity Value')
         plt.show()
 
+    # Display the current time at data capture.
+    # Reference: https://docs.python.org/2/library/datetime.html
     def getPresentTime(self):
         presentdateTime = datetime.datetime.now()
         self.lineEdit_3.setText(presentdateTime.strftime("%m/%d/%Y %H:%M"))
